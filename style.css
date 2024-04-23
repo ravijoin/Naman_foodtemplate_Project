@@ -1,0 +1,236 @@
+
+#navbar {
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+}
+
+#navbar logo2 {
+  margin: 3px 4px;
+}
+
+#navbar ul {
+  display: flex;
+  list-style: none;
+  /* margin: -55px 213px; */
+  position: relative;
+  font-family: "Ubuntu", sans-serif;
+  left: 48rem;
+}
+
+#navbar ul li a {
+  padding: 8px 34px;
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: white;
+  display: block;
+}
+
+#navbar ul li a:hover {
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+}
+
+#navbar::before {
+  background-color: black;
+  content: "";
+  position: absolute;
+  height: 90%;
+  width: 100%;
+  padding: auto 0;
+  z-index: -1;
+  display: flex;
+  opacity: 0.8;
+  border-radius: 1rem;
+  top: 1.5px;
+  left: 0px;
+}
+
+img {
+  display: flex;
+width: 50px;
+height: 45px;
+margin-left: 0.8rem;
+/* margin: auto; */
+border-radius: 70px;;
+}
+
+#Home {
+  display: flex;
+  flex-direction: column;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+}
+
+#Home::before {
+  background: url("img1.jpg") no-repeat center center/cover;
+  content: "";
+  position: absolute;
+  height: 60%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.9;
+  top: 0px;
+  left: 0px;
+}
+
+.heading {
+  color: white;
+  font-size: 42.3px;
+}
+
+#Home p {
+  color: white;
+  font-size: 0.9rem;
+  font-family: "Ubuntu", sans-serif;
+}
+
+button {
+  border: 2px solid brown;
+  border: radius 8px;
+  border-radius: 10px;
+  height: 25px;
+  width: 100px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.primary center {
+  height: 12px;
+}
+
+/* //services section */
+#services {
+  display: flex;
+  margin: 34px;
+}
+
+#services .box {
+  padding: 12px;
+  border: 2px solid brown;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  margin: 2px 23px;
+  border-radius: 28px;
+  background-color: #eee8e7;
+}
+
+#services .box img {
+  height: 95px;
+  display: block;
+  width: 105px;
+  margin: -14px auto;
+}
+
+#services .box p {
+  font-family: "Bree Serif", serif;
+}
+
+.h-primary {
+  font-size: 2rem;
+  display: table;
+  margin: auto;
+  height: auto !important;
+  ;
+  font-family: "Bree Serif", serif;
+}
+
+.h-secondary {
+  font-family: "Bree Serif", serif;
+  font-size: 2.3rem;
+  padding: 12px;
+  margin: auto;
+}
+
+#client-section {
+  height: 160px;
+}
+
+#Clients {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#Clients::before {
+  content: "";
+  background: url("clients.jpg") no-repeat center center/cover;
+  position: absolute;
+  height: 70%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.6;
+  /* top: 0px;
+        left: 0px; */
+}
+
+.client-item img {
+  display: flex;
+  margin: auto;
+  padding: 26px 46px;
+  height: 62px;
+  width: 65px;
+}
+
+/* Contact Section */
+#contact {
+  position: relative;
+}
+
+#contact-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 80px;
+}
+
+#contact::before {
+  content: "";
+  position: absolute;
+  background: url("contact.jpg") no-repeat center center/cover;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+#contact-box input {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 9px;
+  font-size: 1.1rem;
+}
+
+#contact-box textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 9px;
+  font-size: 1.1rem;
+}
+
+#contact-box label {
+  font-size: 1.3rem;
+  font-family: "Bree Serif", serif;
+}
+
+.form-class {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7px 23px;
+}
+
+footer {
+  background: black;
+  color: white;
+  padding: 9px 20px;
+}
