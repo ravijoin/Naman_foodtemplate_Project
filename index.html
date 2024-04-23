@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MyOnlinemeal</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    #navbar {
+      display: flex;
+      align-items: center;
+      position: sticky;
+      top: 0px;
+      z-index: 1;
+    }
+
+    #navbar logo2 {
+      margin: 3px 4px;
+    }
+
+    #navbar ul {
+      display: flex;
+      list-style: none;
+      /* margin: -55px 213px; */
+      position: relative;
+      font-family: "Ubuntu", sans-serif;
+      left: 48rem;
+    }
+
+    #navbar ul li a {
+      padding: 8px 34px;
+      text-decoration: none;
+      font-size: 1.3rem;
+      color: white;
+      display: block;
+    }
+
+    #navbar ul li a:hover {
+      cursor: pointer;
+      border-radius: 5px;
+      background-color: white;
+      color: black;
+    }
+
+    #navbar::before {
+      background-color: black;
+      content: "";
+      position: absolute;
+      height: 90%;
+      width: 100%;
+      padding: auto 0;
+      z-index: -1;
+      display: flex;
+      opacity: 0.8;
+      border-radius: 1rem;
+      top: 1.5px;
+      left: 0px;
+    }
+
+    img {
+      display: flex;
+    width: 50px;
+    height: 45px;
+    margin-left: 0.8rem;
+    /* margin: auto; */
+    border-radius: 70px;;
+    }
+
+    #Home {
+      display: flex;
+      flex-direction: column;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 50px;
+    }
+
+    #Home::before {
+      background: url("img1.jpg") no-repeat center center/cover;
+      content: "";
+      position: absolute;
+      height: 60%;
+      width: 100%;
+      z-index: -1;
+      opacity: 0.9;
+      top: 0px;
+      left: 0px;
+    }
+
+    .heading {
+      color: white;
+      font-size: 42.3px;
+    }
+
+    #Home p {
+      color: white;
+      font-size: 0.9rem;
+      font-family: "Ubuntu", sans-serif;
+    }
+
+    button {
+      border: 2px solid brown;
+      border: radius 8px;
+      border-radius: 10px;
+      height: 25px;
+      width: 100px;
+    }
+
+    button:hover {
+      cursor: pointer;
+    }
+
+    .primary center {
+      height: 12px;
+    }
+
+    /* //services section */
+    #services {
+      display: flex;
+      margin: 34px;
+    }
+
+    #services .box {
+      padding: 12px;
+      border: 2px solid brown;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      margin: 2px 23px;
+      border-radius: 28px;
+      background-color: #eee8e7;
+    }
+
+    #services .box img {
+      height: 95px;
+      display: block;
+      width: 105px;
+      margin: -14px auto;
+    }
+
+    #services .box p {
+      font-family: "Bree Serif", serif;
+    }
+
+    .h-primary {
+      font-size: 2rem;
+      display: table;
+      margin: auto;
+      height: auto !important;
+      ;
+      font-family: "Bree Serif", serif;
+    }
+
+    .h-secondary {
+      font-family: "Bree Serif", serif;
+      font-size: 2.3rem;
+      padding: 12px;
+      margin: auto;
+    }
+
+    #client-section {
+      height: 160px;
+    }
+
+    #Clients {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #Clients::before {
+      content: "";
+      background: url("clients.jpg") no-repeat center center/cover;
+      position: absolute;
+      height: 70%;
+      width: 100%;
+      z-index: -1;
+      opacity: 0.6;
+      /* top: 0px;
+            left: 0px; */
+    }
+
+    .client-item img {
+      display: flex;
+      margin: auto;
+      padding: 26px 46px;
+      height: 62px;
+      width: 65px;
+    }
+
+    /* Contact Section */
+    #contact {
+      position: relative;
+    }
+
+    #contact-box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 80px;
+    }
+
+    #contact::before {
+      content: "";
+      position: absolute;
+      background: url("contact.jpg") no-repeat center center/cover;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      opacity: 0.8;
+    }
+
+    #contact-box input {
+      width: 100%;
+      padding: 0.5rem;
+      border-radius: 9px;
+      font-size: 1.1rem;
+    }
+
+    #contact-box textarea {
+      width: 100%;
+      padding: 0.5rem;
+      border-radius: 9px;
+      font-size: 1.1rem;
+    }
+
+    #contact-box label {
+      font-size: 1.3rem;
+      font-family: "Bree Serif", serif;
+    }
+
+    .form-class {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 7px 23px;
+    }
+
+    footer {
+      background: black;
+      color: white;
+      padding: 9px 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <nav id="navbar">
+    <div id="logo">
+      <img src="bird.jpg" alt="MyOnlineMeal.com" />
+      <!-- <p>Zescart</p> -->
+    </div>
+
+    <ul>
+      <li><a href="#Home">Home</a></li>
+      <li><a href="#section1">Services</a></li>
+      <li><a href="#client-section">Our Clients</a></li>
+      <li><a href="#contact">Contact us</a></li>
+    </ul>
+  </nav>
+  <section id="Home">
+    <h1 class="heading">Welcome to my MyOnlineMeal</h1>
+    <!-- <img class="zomato-logo" src="https://b.zmtcdn.com/web_assets/8313a97515fcb0447d2d77c276532a511583262271.png">  -->
+    <p class="header-body-section-discover">Discover the best food & drinks in Hydrabad</p>
+
+
+    <button>Order now</button>
+  </section>
+  <section id="section1" class="" style="top: 7rem;position: relative;">
+    <h1 class="h-primary center">Our Services</h1>
+    <div id="services">
+      <div class="box">
+        <img src="1.png" />
+        <h2 class="h-secondary center">Food Catering</h2>
+        <p class="center">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem,
+          culpa suscipit error Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Unde laudantium a incidunt animi ad, ab
+          dignissimos vero? Unde numquam odit repudiandae perferendis nisi.
+        </p>
+      </div>
+      <div class="box">
+        <img src="2.png" alt="" />
+        <h2 class="h-secondary center">Bulk Ordering</h2>
+        <p class="center">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem,
+          culpa suscipit error Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Unde laudantium a incidunt animi ad, ab
+          dignissimos vero? Unde numquam odit repudiandae perferendis nisi.
+        </p>
+      </div>
+      <div class="box">
+        <img src="3.png" alt="" />
+        <h2 class="h-secondary center">Food Ordering</h2>
+        <p class="center">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem,
+          culpa suscipit error Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Necessitatibus provident fugiat aliquam minima at
+          explicabo. Earum eveniet quaerat, sunt molestias nesciunt quas!
+          Quis.
+        </p>
+      </div>
+    </div>
+  </section>
+  <section id="client-section" style="top: 7rem;position: relative;">
+    <h1 class="h-primary  center" style="height:100%;position: relative;">Our Clients</h1>
+    <div id="Clients">
+      <div class="client-item">
+        <img src="logo1.png" />
+      </div>
+      <div class="client-item">
+        <img src="logo2.png" />
+      </div>
+      <div class="client-item">
+        <img src="logo3.png" />
+      </div>
+      <div class="client-item">
+        <img src="logo4.png" />
+      </div>
+    </div>
+  </section>
+  <section id="contact" style="top: 7rem;position: relative;">
+    <h1 class="h-primary center">Contact Us</h1>
+    <div id="contact-box">
+      <form action="">
+        <div class="form-class">
+          <label for="name">Name: </label>
+          <input type="text" name="Myname" id="name" placeholder="Enter your name" />
+        </div>
+        <div class="form-class">
+          <label for="email">Email: </label>
+          <input type="email" name="Myemail" id="email" placeholder="Enter your email" />
+        </div>
+        <div class="form-class">
+          <label for="phone">Phone: </label>
+          <input type="value" name="Myphone" id="phone" placeholder="Enter your number" />
+        </div>
+        <div class="form-class">
+          <label for="message">Message: </label>
+          <textarea name="message" id="message"></textarea>
+        </div>
+        <div class="form-class">
+          <button>Submit</button>
+        </div>
+      </form>
+    </div>
+  </section>
+  <footer style="top: 7rem;position: relative; text-align: center;">
+    <div class="center ">
+      Copyright &copy; www.myOnlineMeal.com. All rights reserved!
+    </div>
+  </footer>
+</body>
+
+</html>
